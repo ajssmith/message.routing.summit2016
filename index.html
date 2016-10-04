@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,88 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+                <section>
+                    <h2>Trends and Operational Needs</h2>
+                    <ul>
+                          <li> Problem Statements here </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Background Context</h2>
+                    <ul>
+                          <li> Oslo.messaging </li>
+                          <li> Plugins </li>
+                          <li> Messaging Patterns (RPC, Notification) </li>
+                          <li> Initial use of Brokers </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Key Terms and Concepts</h2>
+                    <ul>
+                          <li> Queue Operation (Store and Forward) </li>
+                          <li> Router Operation (Message Forwarding) </li>
+                          <li> Cluster Operation (Capacity) </li>
+                          <li> Queue Mirroring (Availability) </li>
+                          <li> Router Mesh (Capacity and Availability) </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Compare and Contrast: Broker to Router</h2>
+                    <ul>
+                          <li> RPC Message Transfer (temporal) </li>
+                          <li> RPC Fault Domains </li>
+                          <li> Flow Control/Backpressure (end-to-end) </li>
+                          <li> Scalability (cluster vs mesh capacity) </li>
+                          <li> Resiliency (cluster vs mesh failures) </li>
+                          <li> Maintainability (add,remove, update) </li>
+                          <li> Locality (converged, distributed) </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How the Router Works</h2>
+                    <ul>
+                          <li> Addressing and Learning </li>
+                          <li> Table maintenance </li>
+                          <li> Forwarding "fast path" </li>
+                          <li> Flow and credit management </li>
+                          <li> Broker to mesh attachment </li>
+                          <li> HA configuration(s) </li>
+                          <li> Management thru the mesh </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Demonstration</h2>
+                    <ul>
+                          <li> Storyboard </li>
+                          <li> Introducing the Console </li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Project Information</h2>
+                    <ul>
+                          <li> User guide </li>
+                          <li> Architecture doc </li>
+                          <li> Apache project reference </li>
+                          <li> Package repositories  </li>
+                          <li> List of installers </li>
+                          <li> Puppet module reference </li>
+                          <li> Describe transport_url setup </li>
+                          <li> etc. </li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>What's Next</h2>
+                    <ul>
+                          <li> Support for broker in the mesh </li>
+                          <li> Performance </li>
+                          <li> Installers - OOO </li>
+                          <li> Console Integration  </li>
+                          <li> Config Management - Ansible </li>
+                          <li> Instrumentation </li>
+                          <li> Router Monitoring </li>
+                          <li> etc. </li>
+                    </ul>
+                </section>
 			</div>
 		</div>
 
